@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+    <test name="test1">
+
+        <groups>
+            <run>
+
+                <include name="SmokeTest"></include>
+                <include name="Regression"></include>
+                <!-- include verince sadece onlar calishir excludede onun dishindakilar calishsin -->
+            </run>
+
+        </groups>
+
+
+        <classes>
+            <class name="Day04._03_Groups">
+
+            </class>
+
+        </classes>
+
+
+    </test>
+
+</suite>

@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+    <test name="test1">
+
+        <groups>
+            <run>
+                <exclude name="SmokeTest"></exclude>
+                <!-- include verince sadece onlar calishir excludede onun dishindakilar calishsin -->
+            </run>
+
+        </groups>
+
+
+        <classes>
+            <class name="Day04._03_Groups">
+                <methods> <!-- manasi tetst 5 den bashka diyerlerin calishdir -->
+                    <exclude name="test5"></exclude>
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+
+</suite>
